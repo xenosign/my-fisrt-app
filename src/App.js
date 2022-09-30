@@ -11,17 +11,26 @@ import ChangeObj from "./components/ChangeObj";
 import TestCss from "./components/TestCss";
 import TestStyled from "./components/TestStyled";
 import Logo from "./components/Logo";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ConditionalRender from "./components/ConditionalRender";
 import PracticeOne from "./components/PracticeOne";
 import PracticeTwo from "./components/PracticeTwo";
 import TestRef from "./components/TestRef";
 import ChangeFocus from "./components/ChangeFocus";
+import ReactFragment from "./components/ReactFragment";
+import TableColumn from "./components/TableColumn";
+import Comparing from "./components/Comparing";
+import TestUseEffect from "./components/TestUseEffect";
+import Timer from "./components/Timer";
+import PracticeTimer from "./components/PracticeTimer";
+import TestUseMemo from "./components/TestUseMemo";
+import UsingUseMemo from "./components/UsingUseMemo";
 
 function App() {
+
   return (
     <div className="App">
-      <ChangeFocus />
+      <UsingUseMemo />
     </div>
   );
 }

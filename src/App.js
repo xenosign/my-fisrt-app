@@ -25,12 +25,30 @@ import Timer from "./components/Timer";
 import PracticeTimer from "./components/PracticeTimer";
 import TestUseMemo from "./components/TestUseMemo";
 import UsingUseMemo from "./components/UsingUseMemo";
+import Where from "./components/Where";
+import Image from "./components/Image";
+import Dialog from "./components/Dialog";
+import WelcomeDialog from "./components/WelcomeDialog";
+import WelcomeDialogBtn from "./components/WelcomeDialogBtn";
+import FancyBorder from "./components/FancyBorder";
+import SignUpDialog from "./components/SignUpDialog";
+import Profile from "./components/Profile";
+import Board from "./components/Board";
+import { Routes, Route, Link } from "react-router-dom";
+import Header from "./components/Header";
+import NotFound from "./components/NotFound";
+import BoardDetail from "./components/BoardDetail";
 
 function App() {
-
   return (
     <div className="App">
-      <UsingUseMemo />
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/board" element={<Board />} />
+        <Route path="/board/:boardID" element={<BoardDetail />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
